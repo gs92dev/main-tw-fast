@@ -1,7 +1,12 @@
-import tw from "twin.macro"
+import tw from "twin.macro";
 
 export default function FromScratch() {
-  return <Wrapper></Wrapper>
+  return (
+    <Wrapper>
+      <Test>Hello World</Test>
+    </Wrapper>
+  );
 }
 
-const Wrapper = tw.div``
+const Wrapper = tw.div``;
+const Test = tw.h1`text-green-300`;
